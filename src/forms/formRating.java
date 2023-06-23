@@ -117,7 +117,7 @@ public class formRating extends javax.swing.JFrame {
         // TODO add your handling code here:
         int i = Integer.valueOf(txtindexrating.getText());
         String pesan = "Id : "+Rating.getDataIdrating().get(i)+
-                        "\nNama Kota : "+Rating.getDatarating().get(i);
+                        "\nNama : "+Rating.getDatarating().get(i);
         JOptionPane.showMessageDialog(this, pesan);
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -10,15 +10,14 @@ import java.util.ArrayList;
  * @author ACER NITRO
  */
 public class datasetMenuKuliner {
-    public class datasetMember {
-    public class datasetBarang {
+   
     private ArrayList<String> idmakanan;
     private ArrayList<String> namamakanan;
     private ArrayList<String> harga;
     private ArrayList<String> rating;
     private ArrayList<String> status;
     
-    public datasetBarang(){
+    public datasetMenuKuliner(){
         idmakanan = new ArrayList<>();
         namamakanan = new ArrayList<>();
         harga = new ArrayList<>();
@@ -73,7 +72,4 @@ public class datasetMenuKuliner {
         addRating(Rating);
         addStatus(Status);
     }
-}
-}
-    
 }

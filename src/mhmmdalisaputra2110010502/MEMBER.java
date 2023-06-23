@@ -9,7 +9,7 @@ package mhmmdalisaputra2110010502;
  * @author ACER NITRO
  */
 public class MEMBER {
-    private String id,nama,namatoko,alamat,email,password,saldo,jenis,notlp,status;
+    private String id,nama,alamat,email,password,notlp,status;
     
     public MEMBER(){}
     
@@ -24,12 +24,6 @@ public class MEMBER {
     }
     public String getNAMA (){
         return this.nama;
-    }
-    public void setNAMATOKO(String namatoko){
-        this.namatoko=namatoko;
-    }
-    public String getNAMATOKO (){
-        return this.namatoko;
     }
     public void setALAMAT(String alamat){
         this.alamat=alamat;
@@ -48,18 +42,6 @@ public class MEMBER {
     }
     public String getPASSWORD (){
         return this.password;
-    }
-    public void setSALDO(String saldo){
-        this.saldo=saldo;
-    }
-    public String getSALDO (){
-        return this.saldo;
-    }
-    public void setJENIS(String jenis){
-        this.jenis=jenis;
-    }
-    public String getJENIS (){
-        return this.jenis;   
     }
     public void setNOTLP(String notlp){
         this.notlp=notlp;

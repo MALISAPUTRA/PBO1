@@ -4,7 +4,7 @@
  */
 package mhmmdalisaputra2110010502;
 import java.util.ArrayList;
-import forms.formutama;
+import forms.formUtama;
 
 /**
  *
@@ -36,5 +36,8 @@ public class MALISAPUTRA {
         klnr.setIDMAKANAN("MENU01");
         klnr.setNAMAMAKANAN("Soto");
         System.out.println("ID Menu: "+klnr.getIDMAKANAN()+"\nMENUKULINER : "+klnr.getNAMAMAKANAN());*/
+   
+        new formUtama().setVisible(true);
     }
+      
 }

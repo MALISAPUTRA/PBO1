@@ -38,7 +38,3 @@ public class datasetrating {
         addrating(rating);
     }
 }
-}
-} 
-    
-}

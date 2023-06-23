@@ -9,23 +9,20 @@ import java.util.ArrayList;
  * @author ACER NITRO
  */
 public class datasetPemesanan {
-    public class datasetMember {
-    public class datasetBarang {
+  
     private ArrayList<String> idpemesanan;
     private ArrayList<String> jumlahpemesanan;
     private ArrayList<String> totalpemesanan;
     private ArrayList<String> tanggalpemesanan;
     private ArrayList<String> waktupemesanan;
-    private ArrayList<String> rating; 
     private ArrayList<String> status;
     
-    public datasetBarang(){
+    public datasetPemesanan(){
         idpemesanan = new ArrayList<>();
         jumlahpemesanan = new ArrayList<>();
         totalpemesanan = new ArrayList<>();
         tanggalpemesanan = new ArrayList<>();
         waktupemesanan = new ArrayList<>();
-        rating = new ArrayList<>();
         status = new ArrayList<>();
     }
     
@@ -68,14 +65,6 @@ public class datasetPemesanan {
     public ArrayList<String> getDataWaktupemesanan(){
         return this.waktupemesanan;
     }
-    
-    public void addRating(String value){
-        this.rating.add(value);
-    }
-    
-    public ArrayList<String> getDataRating(){
-        return this.rating;
-    }
     public void addStatus(String value){
         this.status.add(value);
     }
@@ -84,17 +73,12 @@ public class datasetPemesanan {
         return this.status;
     }
     public void TambahBarang(String Idpemesanan, String Jumlahpemesanan, String Totalpemesanan,
-            String Tanggalpemesanan, String Waktupemesanan, String Rating, String Status){
+            String Tanggalpemesanan, String Waktupemesanan, String Status){
         addIdpemesanan(Idpemesanan);
         addJumlahpemesanan(Jumlahpemesanan);
         addTotalpemesanan(Totalpemesanan);
         addTanggalpemesanan(Tanggalpemesanan);
         addWaktupemesanan(Waktupemesanan);
-        addRating(Rating);
         addStatus(Status);
     }
-}
-}
-
-    
 }

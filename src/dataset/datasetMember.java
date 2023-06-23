@@ -10,27 +10,21 @@ import java.util.ArrayList;
  * @author ACER NITRO
  */
 public class datasetMember {
-    public class datasetBarang {
+    
     private ArrayList<String> id;
     private ArrayList<String> nama;
-    private ArrayList<String> namatoko;
     private ArrayList<String> alamat;
     private ArrayList<String> email;
-    private ArrayList<String> password; 
-    private ArrayList<String> saldo;
-    private ArrayList<String> jenis; 
+    private ArrayList<String> password;  
     private ArrayList<String> notlp; 
     private ArrayList<String> status;
     
-    public datasetBarang(){
+    public datasetMember(){
         id = new ArrayList<>();
         nama = new ArrayList<>();
-        namatoko = new ArrayList<>();
         alamat = new ArrayList<>();
         email = new ArrayList<>();
         password = new ArrayList<>();
-        saldo = new ArrayList<>();
-        jenis = new ArrayList<>();
         notlp = new ArrayList<>();
         status = new ArrayList<>();
     }
@@ -49,14 +43,6 @@ public class datasetMember {
     
     public ArrayList<String> getDataNama(){
         return this.nama;
-    }
-    
-    public void addNamaToko(String value){
-        this.namatoko.add(value);
-    }
-    
-    public ArrayList<String> getDataNamaToko(){
-        return this.namatoko;
     }
     
     public void addAlamat(String value){
@@ -82,23 +68,6 @@ public class datasetMember {
     public ArrayList<String> getDataPassword(){
         return this.password;
     }
-    
-    public void addSaldo(String value){
-        this.saldo.add(value);
-    }
-    
-    public ArrayList<String> getDataSaldo(){
-        return this.saldo;
-    }
-    
-    public void addJenis(String value){
-        this.jenis.add(value);
-    }
-    
-    public ArrayList<String> getDataJenis(){
-        return this.jenis;
-    }
-    
     public void addNoTlp(String value){
         this.notlp.add(value);
     }
@@ -114,18 +83,14 @@ public class datasetMember {
     public ArrayList<String> getDataStatus(){
         return this.status;
     }
-    public void TambahBarang(String Id, String Nama, String NamaToko,
-            String Alamat, String Email, String Password, String Saldo, String Jenis, String NoTlp, String Status){
+    public void TambahBarang(String Id, String Nama,
+        String Alamat, String Email, String Password,String NoTlp, String Status){
         addId(Id);
         addNama(Nama);
-        addNamaToko(NamaToko);
         addAlamat(Alamat);
         addEmail(Email);
         addPassword(Password);
-        addSaldo(Saldo);
-        addJenis(Jenis);
         addNoTlp(NoTlp);
         addStatus(Status);
     }
-}
 }

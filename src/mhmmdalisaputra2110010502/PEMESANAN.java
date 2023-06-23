@@ -9,7 +9,7 @@ package mhmmdalisaputra2110010502;
  * @author ACER NITRO
  */
 public class PEMESANAN {
-     private String idpemesanan,jumlahpemesanan,totalpemesanan,tglpemesanan,waktupemesanan,rating,status;
+     private String idpemesanan,jumlahpemesanan,totalpemesanan,tglpemesanan,waktupemesanan,status;
     
     public PEMESANAN (){}
     
@@ -42,12 +42,6 @@ public class PEMESANAN {
     }
     public String getWAKTUPEMESANAN (){
         return this.waktupemesanan;
-    }
-    public void setRATING(String rating){
-        this.rating=rating;
-    }
-    public String getRATING (){
-        return this.rating;
     }
     public void setSTATUS(String status){
         this.status=status;
